@@ -1,6 +1,5 @@
 import { Clipboard, getSelectedText } from "@raycast/api";
-import fetch from "node-fetch";
-global.fetch = fetch; //polyfill for node-fetch
+import "./polyfill-fetch.js";
 import * as harper from "harper.js";
 
 export default async function FixSelectedText() {
