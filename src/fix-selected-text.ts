@@ -1,4 +1,4 @@
-import { Clipboard, getSelectedText } from "@raycast/api";
+import { Clipboard, closeMainWindow, getSelectedText } from "@raycast/api";
 import "./polyfill-fetch.js";
 import * as harper from "harper.js";
 
@@ -21,4 +21,5 @@ export default async function FixSelectedText() {
 		lints = await linter.lint(selectedText);
 	} while (lints.length > 0);
 	await Clipboard.paste(selectedText);
+	closeMainWindow({ clearRootSearch: true });
 }
