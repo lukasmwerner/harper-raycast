@@ -2,7 +2,7 @@
 
 The Grammar Checker for Developers for Raycast
 
-![](/extras/demo.gif)
+![](/extra/demo.gif)
 
 ---
 
