@@ -1,4 +1,4 @@
-# Harper
+# Harper-Raycast
 
 The Grammar Checker for Developers for Raycast
 
@@ -6,7 +6,7 @@ The Grammar Checker for Developers for Raycast
 
 ---
 
-Harper is an excellent grammar checker that runs entirely locally
+[Harper](https://github.com/Automattic/harper) is an excellent grammar checker that runs entirely locally
 (i.e. offline Grammarly competitor)
 
 ## Install
