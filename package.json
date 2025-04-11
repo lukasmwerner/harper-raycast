@@ -23,7 +23,7 @@
   "dependencies": {
     "@raycast/api": "^1.89.1",
     "@raycast/utils": "^1.17.0",
-    "harper.js": "^0.25.1",
+    "harper.js": "^0.26.0",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
