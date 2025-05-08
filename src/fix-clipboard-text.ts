@@ -7,7 +7,9 @@ export default async function FixClipboardText() {
 	if (selectedText == undefined) {
 		return;
 	}
-	let linter = new harper.LocalLinter();
+	let linter = new harper.LocalLinter({
+		binary: harper.binaryInlined,
+	});
 	let lints = await linter.lint(selectedText);
 	do {
 		if (lints.length == 0) break;

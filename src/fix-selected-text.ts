@@ -4,7 +4,9 @@ import * as harper from "harper.js";
 
 export default async function FixSelectedText() {
 	let selectedText = await getSelectedText();
-	let linter = new harper.LocalLinter();
+	let linter = new harper.LocalLinter({
+		binary: harper.binaryInlined,
+	});
 	let lints = await linter.lint(selectedText);
 	do {
 		if (lints.length == 0) break;
